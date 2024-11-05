@@ -84,12 +84,6 @@ CREATE TABLE `tareas` (
 -- Volcado de datos para la tabla `tareas`
 --
 
-INSERT INTO `tareas` (`id_tarea`, `titulo_tarea`, `fecha_inicio`, `fecha_vencimiento`, `id_categoria`, `id_prioridad`, `tarea_completada`, `descripcion_tarea`) VALUES
-(1, 'Estudiar álgebra', '2024-11-05', '2024-11-10', 1, 1, 0, 'Revisar ecuaciones cuadráticas'),
-(2, 'Proyecto de ciencias', '2024-11-06', '2024-11-15', 2, 2, 0, 'Preparar el informe sobre ecosistemas'),
-(3, 'Leer sobre la Revolución Francesa', '2024-11-05', '2024-11-12', 3, 3, 0, 'Leer capítulos 4 y 5'),
-(4, 'david', '2024-11-04', '2024-11-07', 4, 3, 1, 'es hombre');
-
 --
 -- Índices para tablas volcadas
 --
