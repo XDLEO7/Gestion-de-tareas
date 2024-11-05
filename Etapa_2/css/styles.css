@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.notification {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d6e9c6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.completed {
+    color: green;
+}
+
+.not-completed {
+    color: red;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #007bff; /* Color azul */
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Color rojo */
+}
+
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed; /* Quedar en la misma posición */
+    z-index: 1; /* Asegurarse de que esté encima */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Habilitar desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Margen de 15% desde la parte superior y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre los botones */
+}
+
+.btn-confirm {
+    background-color: #28a745; /* Color verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background-color: #dc3545; /* Color rojo */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.close {
+    cursor: pointer;
+    float: right; /* Posicionar el botón de cerrar a la derecha */
+    font-size: 18px;
+}
