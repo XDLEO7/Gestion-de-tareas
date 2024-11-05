@@ -1,0 +1,92 @@
+/* Estilo del fondo del body */
+body {
+    background-color: #D7CCC8; /* Color de fondo */
+    margin: 0; /* Elimina cualquier margen en el body */
+    padding: 0; /* Elimina cualquier padding en el body */
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho/alto */
+    font-family: Arial, sans-serif; /* Fuente por defecto */
+}
+
+/* Para que el box-sizing se aplique a todos los elementos */
+* {
+    box-sizing: inherit; /* Hereda box-sizing del body */
+}
+
+/* Estilos para el navbar */
+.topnav {
+    background-color: #795548; /* Color de fondo del navbar */
+    overflow: hidden;
+    width: 100%; /* Cubre todo el ancho de la ventana */
+    margin: 0; /* Asegura que no haya márgenes alrededor */
+    padding: 0; /* Elimina el padding extra */
+}
+
+/* Estilos para los enlaces del navbar */
+.topnav a {
+    float: left;
+    color: #f2f2f2; /* Color de texto */
+    text-align: center;
+    padding: 14px 16px; /* Padding para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 17px; /* Tamaño de fuente */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para hover */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.topnav a:hover {
+    background-color: #ddd; /* Fondo al pasar el mouse */
+    color: #795548; /* Color de texto al pasar el mouse */
+}
+
+.topnav a.active {
+    background-color: #08c1d2; /* Fondo activo */
+    color: white; /* Color de texto activo */
+}
+
+/* Estilo del contenido */
+.content {
+    padding: 20px; /* Espaciado alrededor del contenido */
+    color: #333; /* Color del texto */
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: auto; /* Centrar el contenido */
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo de encabezados */
+h1, h2 {
+    color: #795548; /* Color para los encabezados */
+    margin-top: 20px; /* Margen superior para separar de contenido anterior */
+}
+
+/* Estilo de listas */
+ul, ol {
+    margin-left: 20px; /* Espaciado para listas */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Estilo para bloques de código */
+pre {
+    background-color: #f4f4f4; /* Fondo claro para el código */
+    padding: 10px; /* Padding alrededor del código */
+    border-left: 4px solid #795548; /* Línea a la izquierda */
+    overflow-x: auto; /* Habilita el scroll horizontal si el contenido es demasiado largo */
+}
+
+/* Estilo para párrafos */
+p {
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 10px 0; /* Margen vertical para separar párrafos */
+}
+
+/* Estilo para listas dentro de listas */
+ul ul {
+    margin-left: 20px; /* Espaciado adicional para sublistas */
+}
+
+/* Estilo para el fuerte */
+strong {
+    color: #795548; /* Color para texto fuerte */
+}
