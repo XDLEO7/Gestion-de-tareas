@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D7CCC8;
+    margin: 0; /* Cambiado para evitar margen indeseado */
+    padding: 0; /* Cambiado para evitar padding indeseado */
+    color: #333;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 2rem; /* Mayor separación debajo del título */
+    color: #4a90e2;
+    text-align: center;
+}
+
+/* Alternativamente, puedes añadir más margen superior al formulario */
+form {
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 10rem; /* Ajusta este valor para mayor separación */
+    align-items: center; /* Centra los elementos del formulario */
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4a90e2;
+}
+
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Botón ancho */
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+/* Estilo para el botón Cancelar */
+.cancel-btn {
+    display: inline-block;
+    background-color: #dc3545; /* Color de fondo del botón cancelar */
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Botón ancho */
+}
+
+.cancel-btn:hover {
+    background-color: #c82333; /* Color al pasar el mouse */
+}
+
+.notification {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Alineación del checkbox y label */
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el checkbox y el texto */
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem; /* Espacio entre el checkbox y el texto */
+}
+
+
+label {
+    font-weight: bold;
+}

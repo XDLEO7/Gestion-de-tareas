@@ -1,0 +1,198 @@
+/* Estilos generales */
+body {
+    /*background-color: #D7CCC8; /* Color de fondo */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del título centrado */
+h1 {
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Notificación */
+.notification {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d6e9c6;
+}
+
+/* Tabla con margen, bordes redondeados y internos ligeros */
+table {
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 0; /* Para mantener los bordes redondeados */
+    margin: 20px auto;
+    border: 2px solid #5D4037;
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Para que el borde redondeado funcione correctamente */
+}
+
+/* Encabezado de tabla */
+table th {
+    background-color: #333;
+    color: #f9f9f9;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #333; /* Borde inferior en el encabezado */
+}
+
+/* Filas de tabla */
+table td {
+    border-bottom: 1px solid #D7CCC8; /* Bordes internos más ligeros */
+    padding: 8px;
+}
+
+/* Filas alternas */
+table tr:nth-child(odd) {
+    background-color: #F5F5F5; /* Color claro */
+}
+
+table tr:nth-child(even) {
+    background-color: #EFEFEF; /* Color ligeramente diferente */
+}
+
+/* Tareas vencidas */
+.overdue {
+    background-color: #FFCDD2;
+    color: #C62828;
+}
+
+/* Estado de tareas */
+.completed {
+    color: green;
+    font-weight: bold;
+}
+
+.not-completed {
+    color: red;
+    font-weight: bold;
+}
+
+/* Estilos de los botones de acción */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 15px; /* Bordes redondeados en los botones */
+    background-color: #28a745; /* Color del botón de crear nueva tarea */
+}
+
+.edit-btn:hover {
+    background-color: #218838; /* Efecto hover */
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+/* Estilo para el botón "Crear Nueva Tarea" */
+.actions {
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+
+.actions a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745; /* Color del botón de crear nueva tarea */
+    color: white;
+    text-decoration: none;
+    border-radius: 15px; /* Bordes redondeados */
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.actions a:hover {
+    background-color: #218838; /* Efecto hover */
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-confirm {
+    background-color: #28a745; /* Color del botón confirmar */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.btn-cancel {
+    background-color: #dc3545; /* Color del botón cancelar */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Estilos para el Navbar */
+.topnav {
+    background-color: #333; /* Color chocolate */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2; /* Color claro para el texto */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: #333; /* Color chocolate */
+}
+
+/* Ajuste para eliminar el margen/padding del body */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+}
